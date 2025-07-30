@@ -1,0 +1,31 @@
+
+h1{
+    text-align: center;
+}
+button{
+    position: relative;
+    right: 500px;
+    top: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+input{
+    top: 50px;
+    right: 500px;
+    position: relative;
+    width: 500px;
+    height: 40px;
+}
+.h1TOw{
+    top: 80px;
+    position: relative;
+}
+#linksContainer {
+    margin-top: 100px;
+
+}
+#delete{
+    position: relative;
+    top: 15px;
+    right: 20px;
+}

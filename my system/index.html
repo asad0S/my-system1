@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>سیستم کانفرم</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Firebase compat (ساده برای HTML) -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyA4ASK0klbVbvSHkzSVp-nNLzZeGizkdGw",
+            authDomain: "confirm-links-system.firebaseapp.com",
+            databaseURL: "https://confirm-links-system-default-rtdb.firebaseio.com",
+            projectId: "confirm-links-system",
+            storageBucket: "confirm-links-system.firebasestorage.app",
+            messagingSenderId: "868617452704",
+            appId: "1:868617452704:web:4ca9c2a9c270e43212ddc5",
+            measurementId: "G-KCL756GTZ9"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const database = firebase.database();
+    </script>
+</head>
+<body>
+      
+        <button id="delete" onclick="deleteConfrom()">ریسیت کامل کانفرم ها</button>
+        
+        <h1>سیستیم آنلاین ما</h1>
+        <input type="text" placeholder="کانفرم خود را وارد کنید">
+        <button>ارسال کانفرم</button>
+        <h1 class="h1TOw"> لینک های دریافت شده:</h1>
+        <div id="linksContainer"></div>
+      
+        <script src="script.js"></script>
+      </body>
+      
+</body>
+</html>
